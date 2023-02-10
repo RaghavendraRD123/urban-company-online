@@ -11,7 +11,9 @@ const adsArr = [
 
 export const Ads = () => {
     return <div style={{
-        display:'flex'
+        display:'flex',
+        gap : '15px',
+        padding : '10px',
     }}>
         {
             adsArr.map((el,i)=>{

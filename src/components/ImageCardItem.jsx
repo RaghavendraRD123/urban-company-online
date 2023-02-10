@@ -1,8 +1,18 @@
-import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react"
-import '../App.css'
+import { Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import '../App.css';
 
 export const ImageCardItem = ({img,head,para}) => {
-return <SimpleGrid w='293px' h='240px' margin='auto' >
+
+        // document.cookie= {
+        //         name : "Raghu",
+        //         age : 25
+        //     }
+        // JSON.stringify()
+
+const urlChangefn = () => {
+        window.location.pathname=`Single/${head}`;
+}
+return <SimpleGrid onClick={urlChangefn} w='293px' h='240px' margin='auto' >
         <div  className='imageItem' >
                 <Image src={img} alt='Image' />
         </div>
